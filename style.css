@@ -1,0 +1,64 @@
+/* Welcome to the Funny CSS Club 😎 */
+
+body {
+    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+    background-size: 400% 400%;
+    animation: rainbow 8s infinite;
+    font-family: Comic Sans MS, cursive;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    text-shadow: 4px 4px 10px black;
+    animation: bounce 1s infinite;
+}
+
+p {
+    color: yellow;
+    font-size: 24px;
+    transform: rotate(-2deg);
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background: hotpink;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    transform: rotate(360deg) scale(1.3);
+    background: limegreen;
+    box-shadow: 0 0 20px yellow;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+}
+
+/* Animations */
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes rainbow {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
